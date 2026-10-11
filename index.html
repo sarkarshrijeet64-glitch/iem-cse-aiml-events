@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEM CSE-AI/ML | Events 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo">IEM</div>
+      <div>
+        <h2>Institute of Engineering & Management</h2>
+        <p>CSE - Artificial Intelligence & Machine Learning</p>
+      </div>
+    </div>
+    <a class="nav-btn" href="#events">Explore Events</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">CSE-AI/ML PRESENTS</div>
+      <h1>Where Ideas Meet<br><span>Experience.</span></h1>
+      <p>Discover, compete, create and have fun at the CSE-AI/ML college events.</p>
+      <a href="#events" class="primary-btn">View Events <span>→</span></a>
+    </section>
+
+    <section class="events-section" id="events">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EVENTS 2026</p>
+          <h2>Choose your event</h2>
+        </div>
+        <p class="event-count">7 Events</p>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card accent-purple">
+          <div class="event-icon">⌘</div><div class="tag">TECH</div><h3>Hackathon</h3>
+          <p>Build innovative solutions, solve real-world problems and turn your ideas into working prototypes.</p>
+          <div class="details"><span>📅 24 Oct 2026</span><span>📍 IEM Campus</span></div>
+          <button class="register-btn" data-event="Hackathon">Register Now</button>
+        </article>
+
+        <article class="event-card accent-blue">
+          <div class="event-icon">?</div><div class="tag">KNOWLEDGE</div><h3>Quiz</h3>
+          <p>Put your knowledge, speed and logical thinking to the test across exciting rounds of questions.</p>
+          <div class="details"><span>📅 25 Oct 2026</span><span>📍 Seminar Hall</span></div>
+          <button class="register-btn" data-event="Quiz">Register Now</button>
+        </article>
+
+        <article class="event-card accent-pink">
+          <div class="event-icon">◉</div><div class="tag">CREATIVE</div><h3>Photography</h3>
+          <p>Capture moments, tell stories and showcase your perspective through the lens.</p>
+          <div class="details"><span>📅 25 Oct 2026</span><span>📍 IEM Campus</span></div>
+          <button class="register-btn" data-event="Photography">Register Now</button>
+        </article>
+
+        <article class="event-card accent-orange">
+          <div class="event-icon">✦</div><div class="tag">ENTERTAINMENT</div><h3>Stand-up Comedy</h3>
+          <p>Bring your funniest stories, sharpest punchlines and make the audience laugh out loud.</p>
+          <div class="details"><span>📅 26 Oct 2026</span><span>📍 Auditorium</span></div>
+          <button class="register-btn" data-event="Stand-up Comedy">Register Now</button>
+        </article>
+
+        <article class="event-card accent-green">
+          <div class="event-icon">★</div><div class="tag">TALENT</div><h3>Go As You Like</h3>
+          <p>Express yourself with creativity, costumes and confidence. Your imagination sets the limit.</p>
+          <div class="details"><span>📅 26 Oct 2026</span><span>📍 Main Stage</span></div>
+          <button class="register-btn" data-event="Go As You Like">Register Now</button>
+        </article>
+
+        <article class="event-card accent-cyan">
+          <div class="event-icon">♟</div><div class="tag">STRATEGY</div><h3>Chess</h3>
+          <p>Think ahead, plan your moves and battle it out on the 64-square battlefield.</p>
+          <div class="details"><span>📅 27 Oct 2026</span><span>📍 Room 204</span></div>
+          <button class="register-btn" data-event="Chess">Register Now</button>
+        </article>
+
+        <article class="event-card accent-yellow">
+          <div class="event-icon">⚡</div><div class="tag">ELECTRONICS</div><h3>Breadboard Design</h3>
+          <p>Design, wire and demonstrate a working electronic circuit while putting your fundamentals to the test.</p>
+          <div class="details"><span>📅 27 Oct 2026</span><span>📍 Electronics Lab</span></div>
+          <button class="register-btn" data-event="Breadboard Design">Register Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <div><p class="eyebrow">ABOUT THE EVENTS</p><h2>Learn. Compete. Create.</h2></div>
+      <p>Organised by the CSE-AI/ML department of Institute of Engineering & Management, these events bring together technology, creativity, strategy and entertainment.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 CSE-AI/ML • Institute of Engineering & Management</p></footer>
+
+  <div class="modal" id="registrationModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <p class="eyebrow">EVENT REGISTRATION</p>
+      <h2 id="modalTitle">Register</h2>
+      <p class="modal-subtitle">Fill in your details to register for this event.</p>
+      <form id="registrationForm">
+        <label>Full Name<input type="text" id="name" required placeholder="Your name"></label>
+        <label>College Email<input type="email" id="email" required placeholder="you@example.com"></label>
+        <label>Phone Number<input type="tel" id="phone" required placeholder="Your phone number"></label>
+        <label>Year<select id="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></label>
+        <button class="submit-btn" type="submit">Submit Registration</button>
+      </form>
+      <div class="success" id="successMessage">Registration details captured successfully!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
